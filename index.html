@@ -13,7 +13,31 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 </style>
   
-
+<body>
+  <div class="w3-right w3-section" style="max-width:500px">
+    <img class="mySlides" scr="" style="width:100%>
+  </div>
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+      var i;
+      var x = 
+  document.getElementsByClassName("'mySlides");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+          myIndex = 1;
+      }
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000);
+ }
+ </script>
+                                        
+    
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
