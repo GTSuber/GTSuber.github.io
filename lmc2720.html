@@ -108,35 +108,10 @@ ul.social-media-list img:hover {
   padding: 5px;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-  
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+
+
 }
 </style>
                            
@@ -176,7 +151,7 @@ ul.social-media-list img:hover {
 <div class="w3-main" style="margin-left:280px;margin-right:40px" id="about">
   
   <!-- Projects -->
-  <div class="w3-container" id="projects" style="margin-top:30px">
+  <div class="w3-container" id="projects" style="margin-top:70px">
     <h1 class="w3-xxxlarge w3-text-black"><b>Principles of Visual Design</b></h1>
     <hr style="width:50px;border:5px solid red; margin-top:5px;" class="w3-round">
     <p>These were assigments that explored various ways of representing and expressing concepts visually.</p>
@@ -264,10 +239,9 @@ ul.social-media-list img:hover {
   
 
 <!-- End page content -->
-</div>
+</div style="margin-bottom:30px">
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="https://www.w3schools.com/w3css/default.asp" title="" target="_blank" class="w3-hover-opacity"></a></p></div>
+
 
 <script>
 // Script to open and close sidebar
@@ -289,20 +263,7 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
   
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
 </script>
 
 </body>
