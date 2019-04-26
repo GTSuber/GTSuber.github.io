@@ -333,6 +333,10 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+  
+if (screen.width <= 460) {
+     document.location = "mobile.html";
+}
 </script>
 
   </body>
