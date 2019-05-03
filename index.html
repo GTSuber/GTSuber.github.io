@@ -130,9 +130,7 @@ ul.social-media-list img:hover {
     <div class="pill-nav">
     <a style="text-align: left;" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">Home</a> 
     <a style="text-align: left;" href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">About</a> 
-    <a style="text-align: left;" href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Projects</a> 
-    <a style="text-align: left;" href="index.html#school" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">School</a> 
-    <a style="text-align: left;" href="index.html#blog" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">Blog</a>
+    <a style="text-align: left;" href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Portfolio</a> 
     <ul class="social-media-list">
       <li><a style="color:white; " href="https://twitter.com/thats_suber" class="fa fa-twitter"></a></li>
       <li><a style="color:white; " href="https://www.linkedin.com/in/joshuasuber/" class="fa fa-linkedin"></a></li>
@@ -145,7 +143,9 @@ ul.social-media-list img:hover {
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding">
   <a href="javascript:void(0)" styleclass="w3-button w3-white w3-margin-right" onclick="w3_open()">☰</a>
+  <span></span>
 </header>
+  
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -330,7 +330,7 @@ ul.social-media-list img:hover {
 <script>
 // Script to open and close sidebar
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myNav").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
 }
  
