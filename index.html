@@ -122,6 +122,23 @@ ul.social-media-list img:hover {
   width: 100%;
   height: auto;
 }
+  
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
 </style>
 <body>
@@ -202,9 +219,11 @@ ul.social-media-list img:hover {
       <p id="caption"></p>
     </div>
   </div>
-
- 
   
+  <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Contact Me!</strong> Currently looking for a Summer 2020 UX Design or Story Internship. 
+  </div>
 
 <!-- End page content -->
 </div style="margin-bottom:70px">
