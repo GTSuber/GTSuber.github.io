@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Joshua Suber</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css" />
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-white w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+      <li id="exit" class="exit-btn hide-desktop"><img src="images/logo.gif" alt="logo" class="logo">
+      </li>
+      <li id="exit" class="exit-btn hide-desktop"><img src="images/name.png" alt="logo" class="name">
+      </li>
+      <p style="font-size: 10px;" class="w3-padding-20"> Computational Media Major at Georgia Tech, currently working at the Georgia Tech Cable Network as a Graphic Artists/Animator</p>
+      
+  </div>
+  <div class="w3-bar-block" "pill-nav">
+    <a style="text-align: left;" href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">About</a> 
+    <a style="text-align: left;" href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Client Projects</a>
+    <a style="text-align: left;" href="#storyboards" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Storyboards</a> 
+    <a style="text-align: left;" href="#uxdesign" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Design</a> 
+    <a style="text-align: left;" href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">Resume</a> 
+    <ul class="social-media-list" "w3-padding-64">
+      <li><a style="color:white; " href="https://twitter.com/thats_suber" class="fa fa-twitter"></a></li>
+      <li><a style="color:white; " href="https://www.linkedin.com/in/joshuasuber/" class="fa fa-linkedin"></a></li>
+      <li><a style="color:white; " href="https://www.instagram.com/thats_suber/" class="fa fa-instagram"></a></li>
+      <li><a style="color:white; " href="mailto:joshuasuber3@gmail.com" class="fa fa-envelope"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-white w3-margin-right" onclick="w3_open()">
+      <label class="switch" id="menu" style="float: right;">
+          <input type="checkbox" unchecked id="check" onclick="myFunction()">
+          <span class="slider round"></span>
+      </label>
+  </a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px;" id="about">
+
+  <!-- Header -->
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding" style="margin-top: 30px">
+      
+    <h1 class="w3-xxxlarge w3-text-red" ><b>About Me.</b></h1>
+      
+    <div class="w3-half">
+      <img src="images/about.jpg" style="width:100%; height:80%;border-radius:3%;">
+    </div>
+
+    <div class="w3-half">
+        <h1 class="w3-xxxlarge w3-text-black"><b>Hi, I'm Joshua</b></h1>
+      <hr style="width:50px;border:5px solid red; margin-top:2px;" class="w3-round">
+      <p>I'm studying Computational Media (specialized in Media and Interaction Design) at the Georgia Institute of Technology.
+        The CM program allows me to explore both art and technology, as well as concepts such as HCI, AI, and Digital Media. </p>
+      <p>I'm also a creator. It's really important to me that I am creating new things, and I enjoy working with a diverse team to bring innovative concepts to life.  </p>
+      <p>In my off time I enjoy playing soccer, drawing comics, and spending time with family.</p>
+      <p>
+      <a href="images/resume.pdf" target="_blank" style="border-radius:3%; margin-top:10px;" class="w3-button w3-ripple w3-red">Resume</a>
+      <a href="mailto:joshuasuber3@gmail.com" style="border-radius:3%; margin-top:10px;" class="w3-button w3-ripple w3-red">Email</a>
+      <a href="mailto:joshuasuber3@gmail.com" style="border-radius:3%; margin-top:10px;" class="w3-button w3-ripple w3-red">Blog</a>
+      
+    </div>
+  </div>
+    
+  <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong>Contact Me!</strong> Currently looking for a Summer 2020 UX Design or Story Internship. 
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+  <!-- Projects -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Client Projects.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Here are a few projects I've done for commercial use. They are a combination of personal and client products. Click on the images for links to their sites of purchase. Closer viewing of these projects are avaliable upon request from recruiters.</p>
+  </div>
+
+  <!-- Projects -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="https://www.amazon.com/AJAR-Joshua-Suber/dp/1082789542">
+        <div class="container">
+            <img src="images/ajar.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>AJAR</h3>
+          <p class="w3-opacity">Mystery/Absrdist Comic Book</p>
+          <p style="font-size: 14px;">Life in college is full of twists, turns, and homework. When four tenacious students (Ali, Jay, Axel, and Raine) go to see their professor, they find themselves falling through a doorway into a MAZE WORLD! Turns out a door isn't just a door. Who knew? </p>
+          <p><b>Click to see more!</b></p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="https://www.muscatinecommunityfoundation.org/find-a-penny-childrens-book/">
+        <div class="container">
+            <img src="images/penny.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Find A Penny</h3>
+          <p class="w3-opacity">Illustrated Children's Book</p>
+          <p style="font-size: 14px;">From the writer Becky Whitmore, I illustrated a 34 Page childrens book for the Community Foundation of Greater Muscatine. Find a Penny is a story of a young boy who encounters a veteran in need who ultimately finds a way to help.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="gtcn.html">
+        <div class="container">
+            <img src="images/gtcn2.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>GTCN</h3>
+          <p class="w3-opacity">Georgia Tech Cable Network</p>
+          <p style="font-size: 14px;">My role at GTCN was to create graphic art and animations. My main projects include monthly web banners and video animations focusing on promoting on-campus sustainability. My supervisor and I meet to discuss the main creative approach of the network!</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+  <!-- Storyboards -->
+  <div class="w3-container" id="storyboards" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Storyboards.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    
+  </div>
+
+  <!-- Storyboards -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="gramnanas.html">
+        <div class="container">
+            <img src="images/inprogress.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Gram Nanas</h3>
+          <p class="w3-opacity">Comedy</p>
+          <p style="font-size: 14px;">When two grandmothers become residents in the same retirement home, their personality begin to really clash. Unable to tolerate each other outside of holidays and family gatherings, they shake things in the most hilarious of ways. 
+            </p>
+          <p><b>Click to see more!</b></p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="sleepkarate.html">
+        <div class="container">
+            <img src="images/inprogress.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Sleep Karate</h3>
+          <p class="w3-opacity">Action</p>
+          <p style="font-size: 14px;">Sleepy from playing video games all last night, a boy unlocks dormant skills during his karate match while unconscious. </p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="coattails.html">
+        <div class="container">
+            <img src="images/inprogress.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Coat Tails</h3>
+          <p class="w3-opacity">Drama/Mystery</p>
+          <p style="font-size: 14px;">Zane and Malcom live thier lives on the road ever sense the world ended. Everyone they've ever loved are either dead, or undead. But, they might know how to make things better, if they are able to handle taking a ride back to their past.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+<!-- UX/Technical Design  -->
+  <div class="w3-container" id="uxdesign" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>UX/Technical Design.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- UX/Technical Design  -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="esbie.html">
+        <div class="container">
+            <img src="images/esbie.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Esbie</h3>
+          <p class="w3-opacity">Voice Assistant Project</p>
+          <p style="font-size: 14px;">Designed a voice assistant for the future of college campuses. This required us to conducted multiple stages of user research and usability testing to better understand the design space. This resulted in us exploring the nature of “studying”, because me and my design team viewed it as an essential element of college life, and a space that has the potential for substantial growth through the combination of voice interaction and education technology.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="atlanta.html">
+        <div class="container">
+            <img src="images/atlantawork.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Atlanta Work</h3>
+          <p class="w3-opacity">Information Visualization</p>
+          <p style="font-size: 14px;">The objective of this project was to highlight areas of business opportunities with Atlanta's 12 city council districts. By visualizing industry, educational level, and commuting statistics, we were able to paint a pictures of the Atlanta workforce, and their relationship with releavant business sectors.<br><br>This is an info visualization project that uses data collected from the Fulton County GIS Portal.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="yardQuest.html">
+        <div class="container">
+            <img src="images/yardquest.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>YardQuest</h3>
+          <p class="w3-opacity">Interactive Game</p>
+          <p style="font-size: 14px;">As a kid, playing in your treehouse in the backyard is loads of fun. So much fun, in fact, that it can be hard to leave that fun and imaginative place that you have created. But, you need to go home! Mom is calling and it is time for dinner. <br><br>This is an interactive game that investigated how virtual cameras work compared to traditional cinematic approaches and the spatiality of 3D virtual worlds.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+    
+<!-- Visual Design -->
+  <div class="w3-container" id="visualdesign" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Visual Design.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Visual Design -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="faces.html">
+        <div class="container">
+            <img src="images/face.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Face Collages</h3>
+          <p class="w3-opacity">Principles fo Visual Design</p>
+          <p style="font-size: 14px;">I was tasked to create faces consisting of a collage of photos from a community based in Atlanta. I chose to represent the fan community of the soccer team Atlanta United.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="gtinfo.html">
+        <div class="container">
+            <img src="images/gatechinfo.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Infographic</h3>
+          <p class="w3-opacity">Georgia Tech Campus Life</p>
+          <p style="font-size: 14px;">Using information of Georgia Tech's website, I created a infographic visualizing the information, while also following Georgia Tech's communication design standards.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="tato.html">
+        <div class="container">
+            <img src="images/tato.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Tato</h3>
+          <p class="w3-opacity">Organizational Branding</p>
+          <p style="font-size: 14px;">Inspired by Lays' potato chips, I created a product and organizational branding strategy. I create a logo and brand idenity system for my product Tato, and final promotional images.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    
+   <!-- Visual Design -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="fruitloops.html">
+        <div class="container">
+            <img src="images/loops.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Breakfast Redesign</h3>
+          <p class="w3-opacity">Froot Loops</p>
+          <p style="font-size: 14px;">Redesigned the packaging of Froot Loops breakfast cereal with a new design approach.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="book.html">
+        <div class="container">
+            <img src="images/sword.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Book Redesign</h3>
+          <p class="w3-opacity">Magnus Chase</p>
+          <p style="font-size: 14px;">Redesigned a book of my choice with clear design and information heirarchy.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <a href="work.html">
+        <div class="container">
+            <img src="images/whoisatlanta.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+        </div>
+        </a>
+        <div class="w3-container">
+          <h3>Who is Atlanta?</h3>
+          <p class="w3-opacity">John C. Portman Jr. Chapter</p>
+          <p style="font-size: 14px;">Designed a chapter from a book focusing on key architect within Atlanta's history.</p>
+          <p><b>Click to see more!</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="resume" style="margin-top:75px; margin-bottom:30px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Resume.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-xlarge;" ><b>Experience.</b></h1>
+      <p style="font-size: 20px;" class="w3-red"><b>Graphic Artist/Animator Intern</b> | Atlanta, Georgia</p>
+      <p><i>Georgia Tech Cable Network | June 2018 - Present</i></p>
+      <p>Use Adobe Creative Suite (Photoshop, Illustrator, and After Effects) to create graphics and animations for web and cable platforms.</p>
+      
+      <p style="font-size: 20px;" class="w3-red"><b>Children's Book Illustrator</b> | Atlanta, Georgia</p>
+      <p><i>Community Foundation of Greater Muscatine | September 2019 - December 2019</i></p>
+      <p>- Created character designs and turn arounds.<br>- Designed and formated a children's book for a non-profit organization.<br>- Created design for character promotional cardboard cutout.</p>
+      
+      <p style="font-size: 20px;" class="w3-red"><b>Student Assistant</b> | Atlanta, Georgia</p>
+      <p><i>Georgia Tech: Electrical Engineering Department (Accounting Team) | August 2017 - April 2018</i></p>
+      <p>- Worked with academic faculty and 7 adminstrative staff to complete daily office/event related tasks. <br>- Assisted professors and faculty in weekly conferences.</p>
+      
+      <p style="font-size: 20px;" class="w3-red"><b>Quality Assurance/Manufacturing Co-op</b> | Atlanta, Georgia</p>
+      <p><i>Nisshinbo Automotive Manufacturing | August 2015 - April 2016</i></p>
+      <p>- Worked on team with Latter Process ,Supply Chain, and QA Engineers to test fiction material, durability, process-flow diagram, and dimension analysis. <br>- Ran daily quality and safety checks on latter process machines, and process documents for process material and dimension changes.</p>
+      
+      <h1 class="w3-xlarge;" ><b>Education.</b></h1>
+      <p style="font-size: 20px;" class="w3-red"><b>Georgia Institute of Technology</b> | Atlanta, Georgia</p>
+      <p><i>Computational Media (Industrial Design Minor) | Present</i></p>
+      <p>"The Bachelor of Science in Computational Media is a collaborative effort by the College of Computing and the School of Literature, Media, and Communication (LMC). The program offers a thorough education in all aspects of the computer as a medium: the technical, the historical-critical, and the applied. Program graduates will have both significant hands-on and theoretical knowledge of computing and an understanding of visual design and the history of media. Graduates will be uniquely positioned to plan, create, and critique new digital media forms for entertainment, education, and business communication."<br><br>"Depending on their coursework within the BS program, students will also be qualified to enter graduate studies in computer science, digital arts, digital media studies, and human-computer interface."</p>
+      
+      <h1 class="w3-xlarge;" ><b>Skills.</b></h1>
+      <p style="font-size: 20px;" class="w3-red"><b>Design/Tools</b></p>
+      <p>- Storyboarding<br>- Drawing/Illustration<br>- Adobe Illustrator<br>- Adobe Photoshop<br>- Adobe After Effects<br>- Adobe XD<br>- Java<br>- HTML/CSS</p>
+      
+      
+      <h1 class="w3-xlarge;" ><b>Activities.</b></h1>
+      <p style="font-size: 20px;" class="w3-red"><b>STEMcomm</b></p>
+      <p><i>Vertically-Integrated Projects</i></p>
+      <p>The goal of this VIP group is to produce novel, creative media about recent scientific discoveries and engineering innovations. These include but are not limited to: interactive museum-style exhibitions, online articles and videos, and festival exhibits. Specifically, the team will create one exhibit or demo per semester, and each team member will publish bi-weekly in the online science magazine Charged.</p>
+      
+      <a href="images/resume.pdf" target="_blank" style="border-radius:3%; margin-top:10px;" class="w3-button w3-ripple w3-red">Resume PDF</a>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("check").checked = false;
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
+
