@@ -66,9 +66,11 @@ body {font-size:16px;}
     <h1 class="w3-xxxlarge w3-text-red" ><b>YardQuest Design Process.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
       
-      
-    <head>
-    <meta charset="utf-8">
+    <img src="images/sketch1" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+    <img src="images/sketch2" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+    <img src="images/sketch3" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+    <img src="images/sketch4" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+  
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | YardQuest</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
@@ -78,9 +80,9 @@ body {font-size:16px;}
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/YARDQUEST WEB.json", {onProgress: UnityProgress});
     </script>
-  </head>
-  <body>
-    <div class="webgl-content">
+
+ 
+    <div class="webgl-content" style="margin-left:400px;">
       <div id="gameContainer" style="margin-left:400px; width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
@@ -88,7 +90,7 @@ body {font-size:16px;}
         <div class="title">YardQuest</div>
       </div>
     </div>
-  </body>
+
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
