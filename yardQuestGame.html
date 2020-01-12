@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Joshua Suber</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Unity Home Project</title>
+    <link rel="shortcut icon" href="TemplateData2/favicon.ico">
+    <link rel="stylesheet" href="TemplateData2/style.css">
+    <script src="TemplateData2/UnityProgress.js"></script>
+    <script src="Build2/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build2/Home.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-white w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+      <li id="exit" class="exit-btn hide-desktop"><img src="images/logo.gif" alt="logo" class="logo">
+      </li>
+      <li id="exit" class="exit-btn hide-desktop"><img src="images/name.png" alt="logo" class="name">
+      </li>
+      <p style="font-size: 10px;" class="w3-padding-20"> Computational Media Major at Georgia Tech, currently working at the Georgia Tech Cable Network as a Graphic Artists/Animator</p>
+      
+  </div>
+  <div class="w3-bar-block" "pill-nav">
+    <a style="text-align: left;" href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">About</a> 
+    <a style="text-align: left;" href="index.html#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Client Projects</a>
+    <a style="text-align: left;" href="index.html#storyboards" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Storyboards</a> 
+    <a style="text-align: left;" href="index.html#uxdesign" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Design</a> 
+    <a style="text-align: left;" href="index.html#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">Resume</a> 
+    <ul class="social-media-list" "w3-padding-64">
+      <li><a style="color:white; " href="https://twitter.com/thats_suber" class="fa fa-twitter"></a></li>
+      <li><a style="color:white; " href="https://www.linkedin.com/in/joshuasuber/" class="fa fa-linkedin"></a></li>
+      <li><a style="color:white; " href="https://www.instagram.com/thats_suber/" class="fa fa-instagram"></a></li>
+      <li><a style="color:white; " href="mailto:joshuasuber3@gmail.com" class="fa fa-envelope"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-white w3-margin-right" onclick="w3_open()">
+      <label class="switch" id="menu" style="float: right;">
+          <input type="checkbox" unchecked id="check" onclick="myFunction()">
+          <span class="slider round"></span>
+      </label>
+  </a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px;" id="about">
+
+  <!-- Header -->
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding" style="margin-top: 30px">
+    <h1 class="w3-xxxlarge w3-text-red" ><b>YardQuest Design Process.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+      
+      
+       <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Unity Home Project</title>
+    <link rel="shortcut icon" href="TemplateData2/favicon.ico">
+    <link rel="stylesheet" href="TemplateData2/style.css">
+    <script src="TemplateData2/UnityProgress.js"></script>
+    <script src="Build2/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build2/Home.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 100%; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Unity Home Project</div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("check").checked = false;
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
