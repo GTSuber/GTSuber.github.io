@@ -292,6 +292,7 @@ Debt: $debt
 &lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="play another round" tags="" position="623,740" size="100,100">I bet 20,000 again, becuase that is my luck number. I need a $winNum, but I throw a $dice. I loose again. 
 &lt;&lt;if $money &lt;= 20000&gt;&gt;
    I need to go to the [[secret room]] to get more money!
+   &lt;&lt;set $money -= 20000&gt;&gt;
 &lt;&lt;else&gt;&gt;
    I [[play another round]]
    or I could go to the [[bar]] or [[resturant]] 
