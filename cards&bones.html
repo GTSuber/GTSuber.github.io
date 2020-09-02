@@ -193,7 +193,7 @@ Now that I have money, where should I go?
 &lt;&lt;set $dice = random(2,12)&gt;&gt;
 &lt;&lt;set $winNum = random(2,12)&gt;&gt;
 &lt;&lt;endif&gt;&gt;
-
+&lt;&lt;set $secretVisits += 1&gt;&gt;
 Money: $money
 Secret room visits: $secretVisits
 Debt: $debt
@@ -202,7 +202,6 @@ Debt: $debt
   Do you have to use the [[bathroom]] 
 &lt;&lt;endif&gt;&gt;
 
-&lt;&lt;set $secretVisits += 1&gt;&gt;
 
 
 
