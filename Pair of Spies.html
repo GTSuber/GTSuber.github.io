@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Pair of Spies" startnode="1" creator="Twine" creator-version="2.3.9" ifid="1C16CA48-1F7E-4648-8AD6-D53E9E42F7C3" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="305,40" size="100,100">
+<tw-storydata name="Pair of Spies" startnode="1" creator="Twine" creator-version="2.3.9" ifid="1C16CA48-1F7E-4648-8AD6-D53E9E42F7C3" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Play Again" tags="" position="305,41" size="100,100">
 
 
 
@@ -75,7 +75,7 @@ There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$cou
 
 </tw-passagedata><tw-passagedata pid="6" name="&quot;Oh no, there&#39;s beeping! What do I do?&quot;" tags="" position="300,597" size="100,100">Partner: &quot;Can&#39;t even follow simply tasks correctly. Do you want to live?&quot; 
 
-[[&quot;What&#39;s you problem?&quot;]]
+[[&quot;What&#39;s your problem?&quot;]]
 [[&quot;Yes! Tell me what to do.&quot;|&quot;Because, if you don&#39;t, you&#39;ll fail.&quot;]]
 
 There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
@@ -150,7 +150,9 @@ There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$cou
 (replace: ?amount)[$counter]
 ]</tw-passagedata><tw-passagedata pid="12" name="End" tags="" position="864,878" size="100,100">The explosion is so intense that I barely feel the impact. I&#39;m obliterated within seconds. 
 
-The only thing I have time to regret is that my partner wasn&#39;t caught in the blast with me. </tw-passagedata><tw-passagedata pid="13" name="&quot;Why, I haven&#39;t done anything to you?&quot;" tags="" position="257,899" size="100,100">Partner: You&#39;re just not cut out for this!
+The only thing I have time to regret is that my partner wasn&#39;t caught in the blast with me. 
+
+[[Play Again]]</tw-passagedata><tw-passagedata pid="13" name="&quot;Why, I haven&#39;t done anything to you?&quot;" tags="" position="257,899" size="100,100">Partner: You&#39;re just not cut out for this!
 
 [[&quot;Why?&quot;]]
 
@@ -175,7 +177,7 @@ There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$cou
 
 Partner: &quot;Maybe your not completely useless after all.&quot;
 
-</tw-passagedata><tw-passagedata pid="16" name="&quot;Because, we are partners.&quot;" tags="" position="634,925" size="100,100">Partner: &quot;You will never be my partner!&quot;
+[[Play Again]] </tw-passagedata><tw-passagedata pid="16" name="&quot;Because, we are partners.&quot;" tags="" position="634,925" size="100,100">Partner: &quot;You will never be my partner!&quot;
 
 [[&quot;If you not going to help me, I&#39;ll do it on my own!&quot;]]
 
@@ -185,7 +187,7 @@ There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$cou
 (set: $counter to it - 1)
 (if: $counter is 0)[(go-to: &quot;End&quot;)]
 (replace: ?amount)[$counter]
-]</tw-passagedata><tw-passagedata pid="17" name="&quot;Because, if you don&#39;t, you&#39;ll fail.&quot;" tags="" position="759,992" size="100,100">That seems to get their attention
+]</tw-passagedata><tw-passagedata pid="17" name="&quot;Because, if you don&#39;t, you&#39;ll fail.&quot;" tags="" position="759,993" size="100,100">That seems to get their attention
 
 Partner: &quot;Fine, do exactly what I say&quot;
 
@@ -219,7 +221,7 @@ There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$cou
 (set: $counter to it - 1)
 (if: $counter is 0)[(go-to: &quot;End&quot;)]
 (replace: ?amount)[$counter]
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="20" name="&quot;What&#39;s your problem?&quot;" tags="" position="379,747" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
