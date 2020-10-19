@@ -11,7 +11,213 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Pair of Spies" startnode="1" creator="Twine" creator-version="2.3.9" ifid="1C16CA48-1F7E-4648-8AD6-D53E9E42F7C3" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="324,141" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+<tw-storydata name="Pair of Spies" startnode="1" creator="Twine" creator-version="2.3.9" ifid="1C16CA48-1F7E-4648-8AD6-D53E9E42F7C3" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="305,40" size="100,100">
+
+
+
+
+
+Story/Storyworld: Pair of Spies/Spyglass Stories 
+Author: Joshua Suber 
+Genre: Spy Fiction (Spy-fi) 
+
+[[Begin Task]]
+</tw-passagedata><tw-passagedata pid="2" name="Begin Task" tags="" position="237,254" size="100,100">I&#39;m so nervous, I&#39;m visably shaking. I crouch down, and look closley at the bomb. According to the instructors I have 1 minute. I begin to talk: 
+
+[[Ok, tell me what to do?]]
+
+ (set: $counter to 60)
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]
+</tw-passagedata><tw-passagedata pid="3" name="Ok, tell me what to do?" tags="" position="409,304" size="100,100">Partner: &quot;Wow, you really know nothing. It&#39;s an AR-639 explosive. First unscrew the top hatch.&quot; 
+
+[[&quot;Ok, I can do that. I think.&quot;]]
+[[&quot;Wait, is there a certain way I should do it?&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]
+
+</tw-passagedata><tw-passagedata pid="4" name="&quot;Ok, I can do that. I think.&quot;" tags="" position="244,454" size="100,100">I begin undo the screw for the top hatch of the explosive. Once done, I lift up and remove the compartment. But, it seems I have triggered something. 
+
+[[&quot;Oh no, there&#39;s beeping! What do I do?&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]
+
+</tw-passagedata><tw-passagedata pid="5" name="&quot;Wait, is there a certain way I should do it?&quot;" tags="" position="484,454" size="100,100">Partner: &quot;So you know anything! Seriously, you are not cut out for this.&quot; 
+
+[[&quot;Ok, how can I make this easier for you?&quot;]]
+[[&quot;Just do your job, and tell me what to do! There&#39;s no time!&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]
+
+
+</tw-passagedata><tw-passagedata pid="6" name="&quot;Oh no, there&#39;s beeping! What do I do?&quot;" tags="" position="334,605" size="100,100">Partner: &quot;Can&#39;t even follow simply tasks correctly. Do you want to live?&quot; 
+
+[[&quot;What&#39;s you problem?&quot;]]
+[[&quot;Yes! Tell me what to do.&quot;|&quot;Because, if you don&#39;t, you&#39;ll fail.&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]
+
+</tw-passagedata><tw-passagedata pid="7" name="&quot;Ok, how can I make this easier for you?&quot;" tags="" position="480,607" size="100,100">Suprised by my approach, my partner&#39;s tone changes. 
+
+Partner: &quot;Ok listen closely, and don&#39;t make repeat myself.&quot;
+
+[[&quot;Ok, will do.&quot;]]
+[[&quot;Fine, but I&#39;m running out of time. Can you hurry!&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]
+
+</tw-passagedata><tw-passagedata pid="8" name="&quot;Just do your job, and tell me what to do! There&#39;s no time!&quot;" tags="" position="626,604" size="100,100">He does respond. I&#39;m beginning to get even more nervous and the clock counts down. Many spies-in-training have died during course trials, and I don&#39;t want to be one of them. 
+
+[[&quot;Okay! I&#39;m sorry, just PLEASE HELP!&quot;|&quot;Because, if you don&#39;t, you&#39;ll fail.&quot;]]
+[[&quot;If you not going to help me, I&#39;ll do it on my own!&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]
+
+
+</tw-passagedata><tw-passagedata pid="9" name="&quot;What&#39;s you problem?&quot;" tags="" position="259,754" size="100,100">Partner: &quot;You are! I can&#39;t believe I was paired up with you.&quot;
+
+[[&quot;Why, I haven&#39;t done anything to you?&quot;]]
+[[&quot;Fine, you can hate me later. Just help me NOW!&quot;|&quot;Because, if you don&#39;t, you&#39;ll fail.&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="10" name="&quot;Ok, will do.&quot;" tags="" position="525,749" size="100,100">My patner begins to rattle off instructions, and I quickly execute them. 
+
+Partner: :If you have done all that correctly, you should deactivate the bomb by cutting the blue wire. 
+
+[[&quot;Ok I&#39;m cutting it now.&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="11" name="&quot;If you not going to help me, I&#39;ll do it on my own!&quot;" tags="" position="856,747" size="100,100">Ignoring the beaping sound, I move around the explosive until I find the connective wires. Red seems like the go to color, so I cut it. 
+
+[[Boom|End]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="12" name="End" tags="" position="864,878" size="100,100">The explosion is so intense that I barely feel the impact. I&#39;m obliterated within seconds. The only thing I have time to regret is that my partner wasn&#39;t caught in the blast with me. </tw-passagedata><tw-passagedata pid="13" name="&quot;Why, I haven&#39;t done anything to you?&quot;" tags="" position="257,899" size="100,100">Partner: You&#39;re just not cut out for this!
+
+[[&quot;Why?&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="14" name="&quot;Fine, but I&#39;m running out of time. Can you hurry!&quot;" tags="" position="673,759" size="100,100">Partner: &quot;Why should I? If you die, there&#39;s one less lacky draging us all down.&quot;
+
+[[&quot;Because, we are partners.&quot;]]
+[[&quot;Because, if you don&#39;t, you&#39;ll fail.&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="15" name="&quot;Ok I&#39;m cutting it now.&quot;" tags="" position="483,944" size="100,100">I cut the wire. The device shuts off with a satisfying click. I let out a huge sigh of relief. 
+
+Partner: &quot;Maybe your not completely useless after all.&quot;
+
+</tw-passagedata><tw-passagedata pid="16" name="&quot;Because, we are partners.&quot;" tags="" position="634,925" size="100,100">Partner: &quot;You will never be my partner!&quot;
+
+[[&quot;If you not going to help me, I&#39;ll do it on my own!&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="17" name="&quot;Because, if you don&#39;t, you&#39;ll fail.&quot;" tags="" position="759,992" size="100,100">That seems to get their attention
+
+Partner: &quot;Fine, do exactly what I say&quot;
+
+[[&quot;Ok, will do.&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="18" name="&quot;Why?&quot;" tags="" position="257,1049" size="100,100">Partner: &quot;Because, if my parents can get killed during missions, what makes you any better.&quot;
+
+Their response took me off guard.
+
+[[&quot;I&#39;m sorry.&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]</tw-passagedata><tw-passagedata pid="19" name="&quot;I&#39;m sorry.&quot;" tags="" position="257,1199" size="100,100">Partner: &quot;Whatever.&quot;
+
+[[&quot;But, I won&#39;t be alone on missions. I&#39;ll have your help&quot;|&quot;Because, if you don&#39;t, you&#39;ll fail.&quot;]]
+
+There are only (css: &quot;color:orange; font-size: 200%&quot;)[|amount&gt;[$counter]] seconds left!
+
+(live: 1s)[
+(set: $counter to it - 1)
+(if: $counter is 0)[(go-to: &quot;End&quot;)]
+(replace: ?amount)[$counter]
+]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
