@@ -56,26 +56,36 @@ body {font-size:16px;}
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px; margin-bottom:30px" id="about">
+<div class="w3-main" style="margin-left:340px;margin-right:40px;" id="about">
 
   <!-- Header -->
 
   <!-- Photo grid (modal) -->
-  <div class="w3-row-padding" style="margin-top: 30px">
-    <h1 class="w3-xxxlarge w3-text-red" ><b>Story Portfolio (pending update).</b></h1>
+  <div class="w3-row-padding" style="margin-top: 30px; margin-bottom: 30px">
+      <h1 class="w3-xxxlarge w3-text-red" ><b>Froot Loops Redesign.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-     <img src="watch.png" style="width:100%; margin-bottom: 15px;>
-     </div>
+      
+      <div class="w3-half">
+      <h1 class="w3-xlarge w3-text-black" ><b>Before</b></h1>
+          <img src="images/froot1.png" style="width:70%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+          
+      </div>
+      
+      <div class="w3-half">
+          <h1 class="w3-xlarge w3-text-black" ><b>After</b></h1>
+      <img src="images/froot2.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      </div>
+
+          
+        
+      
   
-                                                  
   </div>
-                                                  
-                                                  
- 
   
   
-  
-     
+
+
+
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
@@ -90,6 +100,9 @@ body {font-size:16px;}
 <!-- End page content -->
 </div>
 
+<!-- W3.CSS Container
+<div class=" w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p></div>
+-->
 <script>
 // Script to open and close sidebar
 function w3_open() {
@@ -110,7 +123,18 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
+function drop(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
 </script>
 
 </body>
 </html>
+
+
