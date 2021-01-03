@@ -15,6 +15,33 @@ body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;cursor:pointer}
 .w3-half img:hover{opacity:1}
   
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
 
 </style>
 <body>
@@ -32,7 +59,12 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block" "pill-nav">
     <a style="text-align: left;" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">Home</a> 
-    <a style="text-align: left;" href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Projects</a> 
+    <div>
+      <a style="text-align: left;" href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Projects</a> 
+      <div class="dropdown-content">
+          <a href="#">Recent</a>
+          <a href="#">All</a>
+      </div>
     <a style="text-align: left;" href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">About</a> 
     <ul class="social-media-list" "w3-padding-64">
       <li><a style="color:white; " href="https://twitter.com/thats_suber" class="fa fa-twitter"></a></li>
