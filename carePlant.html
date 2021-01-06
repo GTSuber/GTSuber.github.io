@@ -1,1 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Joshua Suber</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/main.css" />
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;cursor:pointer}
+.w3-half img:hover{opacity:1}
+  
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 300px;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-white w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+      <li id="exit" class="exit-btn hide-desktop"><img src="images/logo.gif" alt="logo" class="logo">
+      </li>
+      <li id="exit" class="exit-btn hide-desktop"><img src="images/name.png" alt="logo" class="name">
+      </li>
+      <p style="font-size: 10px;" class="w3-padding-20"> Computational Media Major at Georgia Tech, currently apply to HCI master programs!</p>
+      
+  </div>
+  <div class="w3-bar-block" "pill-nav">
+    <a style="text-align: left;" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">Home</a> 
+    <div class="dropdown">
+      <a style="text-align: left;" href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Projects</a> 
+      <div class="dropdown-content">
+          <a href="#projects">Recent</a>
+          <a href="projects.html">All</a>
+      </div>
+    </div>
+    <a style="text-align: left;" href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">About</a> 
+    <ul class="social-media-list" "w3-padding-64">
+      <li><a style="color:white; " href="https://twitter.com/thats_suber" class="fa fa-twitter"></a></li>
+      <li><a style="color:white; " href="https://www.linkedin.com/in/joshuasuber/" class="fa fa-linkedin"></a></li>
+      <li><a style="color:white; " href="https://www.instagram.com/thats_suber/" class="fa fa-instagram"></a></li>
+      <li><a style="color:white; " href="mailto:joshuasuber3@gmail.com" class="fa fa-envelope"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-white w3-margin-right" onclick="w3_open()">
+      <label class="switch" id="menu" style="float: right;">
+          <input type="checkbox" unchecked id="check" onclick="myFunction()">
+          <span class="slider round"></span>
+      </label>
+  </a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px;">
+ 
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+  <!-- Projects -->
+  <div class="w3-container" style="margin-top:30px;" id="projects"  >
+    <h1 class="w3-xxxlarge w3-text-red"><b>All Projects.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+ 
+  </div>
+
+  <!-- Projects -->
+  <div>
+    <a href="yardQuest.html">
+  <div class="container">
+            <img src="images/minitile3.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+  </div>
+      </div>
+   <div>
+    <a href="esbie.html">
+   <div class="container">
+            <img src="images/minitile1.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+  </div>
+     </a>
+      </div>
+   <div>
+    <a href="work.html">
+   <div class="container">
+            <img src="images/minitile2.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+  </div>
+      </a>
+      </div>
+     
+  <div>
+    <a href="block.html">
+   <div class="container">
+            <img src="images/minitile4.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+  </div>
+      </a>
+      </div>
+    
+    
+ <div>
+    <a href="clipboard.html">
+   <div class="container">
+            <img src="images/minitile5.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+  </div>
+      </a>
+      </div>
+    
+    
+  <div>
+    <a href="carePlant.html">
+   <div class="container">
+            <img src="images/minitile8.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+  </div>
+      </a>
+      </div>
+    
+    
+  <div>
+    <a href="gtcn.html">
+   <div class="container">
+            <img src="images/minitile6.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+  </div>
+      </a>
+      </div>
+    
+  <div>
+    <a href="georgiaBanners.html">
+   <div class="container">
+            <img src="images/minitile7.png" alt="Avatar" class="image" style="width:100%">
+            <div class="overlay">
+            <div class="text"></div>
+            </div>
+  </div>
+      </a>
+      </div>
+  
+
+
+
+  <!-- Header -->
+
+
+    
+
+
+  <!-- Packages / Pricing Tables -->
+    <!--
+  <div class="w3-container" id="resume" style="margin-top:75px; margin-bottom:30px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Resume.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-xlarge;" ><b>Experience.</b></h1>
+      <p style="font-size: 20px;" class="w3-red"><b>Graphic Artist/Animator Intern</b> | Atlanta, Georgia</p>
+      <p><i>Georgia Tech Cable Network | June 2018 - Present</i></p>
+      <p>Use Adobe Creative Suite (Photoshop, Illustrator, and After Effects) to create graphics and animations for web and cable platforms.</p>
+      
+      <p style="font-size: 20px;" class="w3-red"><b>Children's Book Illustrator</b> | Atlanta, Georgia</p>
+      <p><i>Community Foundation of Greater Muscatine | September 2019 - December 2019</i></p>
+      <p>- Created character designs and turn arounds.<br>- Designed and formated a children's book for a non-profit organization.<br>- Created design for character promotional cardboard cutout.</p>
+      
+      <p style="font-size: 20px;" class="w3-red"><b>Student Assistant</b> | Atlanta, Georgia</p>
+      <p><i>Georgia Tech: Electrical Engineering Department (Accounting Team) | August 2017 - April 2018</i></p>
+      <p>- Worked with academic faculty and 7 adminstrative staff to complete daily office/event related tasks. <br>- Assisted professors and faculty in weekly conferences.</p>
+      
+      <p style="font-size: 20px;" class="w3-red"><b>Quality Assurance/Manufacturing Co-op</b> | Atlanta, Georgia</p>
+      <p><i>Nisshinbo Automotive Manufacturing | August 2015 - April 2016</i></p>
+      <p>- Worked on team with Latter Process ,Supply Chain, and QA Engineers to test fiction material, durability, process-flow diagram, and dimension analysis. <br>- Ran daily quality and safety checks on latter process machines, and process documents for process material and dimension changes.</p>
+      
+      <h1 class="w3-xlarge;" ><b>Education.</b></h1>
+      <p style="font-size: 20px;" class="w3-red"><b>Georgia Institute of Technology</b> | Atlanta, Georgia</p>
+      <p><i>Computational Media (Industrial Design Minor) | Present</i></p>
+      <p>"The Bachelor of Science in Computational Media is a collaborative effort by the College of Computing and the School of Literature, Media, and Communication (LMC). The program offers a thorough education in all aspects of the computer as a medium: the technical, the historical-critical, and the applied. Program graduates will have both significant hands-on and theoretical knowledge of computing and an understanding of visual design and the history of media. Graduates will be uniquely positioned to plan, create, and critique new digital media forms for entertainment, education, and business communication."<br><br>"Depending on their coursework within the BS program, students will also be qualified to enter graduate studies in computer science, digital arts, digital media studies, and human-computer interface."</p>
+      
+      <h1 class="w3-xlarge;" ><b>Skills.</b></h1>
+      <p style="font-size: 20px;" class="w3-red"><b>Design/Tools</b></p>
+      <p>- Storyboarding<br>- Drawing/Illustration<br>- Adobe Illustrator<br>- Adobe Photoshop<br>- Adobe After Effects<br>- Adobe XD<br>- Java<br>- HTML/CSS</p>
+      
+      
+      <h1 class="w3-xlarge;" ><b>Activities.</b></h1>
+      <p style="font-size: 20px;" class="w3-red"><b>STEMcomm</b></p>
+      <p><i>Vertically-Integrated Projects</i></p>
+      <p>The goal of this VIP group is to produce novel, creative media about recent scientific discoveries and engineering innovations. These include but are not limited to: interactive museum-style exhibitions, online articles and videos, and festival exhibits. Specifically, the team will create one exhibit or demo per semester, and each team member will publish bi-weekly in the online science magazine Charged.</p>
+      
+      <a href="images/resume.pdf" target="_blank" style="border-radius:3%; margin-top:10px;" class="w3-button w3-ripple w3-red">Resume PDF</a>
+  </div>
+-->
+<div class="w3-container" id="resume" style="margin-top:75px; margin-bottom:30px">
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("check").checked = false;
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
