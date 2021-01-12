@@ -57,9 +57,13 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block" "pill-nav">
     <a style="text-align: left;" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">Home</a> 
-    <a style="text-align: left;" href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Portfolios</a>
-    <a style="text-align: left;" href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Projects</a> 
-    <a style="text-align: left;" href="https://subermain.blogspot.com/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Blog</a> 
+    <div class="dropdown">
+      <a style="text-align: left;" href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Projects</a> 
+      <div class="dropdown-content">
+          <a href="#projects">Recent</a>
+          <a href="projects.html">All</a>
+      </div>
+    </div>
     <a style="text-align: left;" href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">About</a> 
     <ul class="social-media-list" "w3-padding-64">
       <li><a style="color:white; " href="https://twitter.com/thats_suber" class="fa fa-twitter"></a></li>
