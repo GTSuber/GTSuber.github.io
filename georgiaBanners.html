@@ -30,9 +30,13 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block" "pill-nav">
     <a style="text-align: left;" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">Home</a> 
-    <a style="text-align: left;" href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Portfolios</a>
-    <a style="text-align: left;" href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Projects</a> 
-    <a style="text-align: left;" href="https://subermain.blogspot.com/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Blog</a> 
+    <div class="dropdown">
+      <a style="text-align: left;" href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Projects</a> 
+      <div class="dropdown-content">
+          <a href="index.html#projects">Recent</a>
+          <a href="projects.html">All</a>
+      </div>
+    </div>
     <a style="text-align: left;" href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">About</a> 
     <ul class="social-media-list" "w3-padding-64">
       <li><a style="color:white; " href="https://twitter.com/thats_suber" class="fa fa-twitter"></a></li>
@@ -68,28 +72,21 @@ body {font-size:16px;}
       
       <div class="w3-half">
       <h1 class="w3-xlarge w3-text-black" ><b>Banner One</b></h1>
-          <img src="images/banner1.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+          <img src="images/banner1.png" style="width:20%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+        <h1 class="w3-xlarge w3-text-black" ><b>Banner Two</b></h1>
+          <img src="images/banner2.png" style="width:20%; margin-bottom: 15px;" onclick="onClick(this)" alt="banner 2">
           
       </div> 
-      
-      <div class="w3-half">
-      <h1 class="w3-xlarge w3-text-black" ><b>Banner Two</b></h1>
-          <img src="images/banner2.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
-          
-      </div> 
+     
       
       <div class="w3-half">
       <h1 class="w3-xlarge w3-text-black" ><b>Banner 3</b></h1>
-          <img src="images/banner3.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+          <img src="images/banner3.png" style="width:20%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+        <h1 class="w3-xlarge w3-text-black" ><b>Stand-In Banner</b></h1>
+          <img src="images/standIn.png" style="width:20%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
           
       </div>
-      
-      <div class="w3-half">
-      <h1 class="w3-xlarge w3-text-black" ><b>Stand-In Banner</b></h1>
-          <img src="images/standIn.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
-          
-      </div>          
-  
+     
   
   
   
