@@ -1,7 +1,3 @@
-p {
-    font-family: Roboto;
-}
-
 #title {
 	float: left;
 }
@@ -42,4 +38,10 @@ div.tooltip {
 
 div.movie_title {
 	overflow: left; 
+}
+
+#name {
+    font-family: Roboto;
+    text-align: center;	
+
 }
