@@ -45,28 +45,19 @@ body {font-size:16px;}
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-white w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-white w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-      <li id="exit" class="exit-btn hide-desktop"><img src="images/logo.gif" alt="logo" class="logo">
+      <li id="exit" class="exit-btn hide-desktop"><img src="img/logo(2021).png" alt="logo" class="logo">
       </li>
-      <li id="exit" class="exit-btn hide-desktop"><img src="images/name.png" alt="logo" class="name">
-      </li>
-      <p style="font-size: 10px;" class="w3-padding-20"> Computational Media Major at Georgia Tech, currently apply to HCI master programs!</p>
+      <p style="font-size: 16px; font-family: Roboto;" class="w3-padding-20">Hi, I am a Master student at Carnegie Mellon University studying Human Computer Interactions, currently pursuing fulltime UX Design roles.</p>
       
   </div>
   <div class="w3-bar-block" "pill-nav">
-    <a style="text-align: left;" href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">Home</a> 
-    <div class="dropdown">
-      <a style="text-align: left;" href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover:indigo">Projects</a> 
-      <div class="dropdown-content">
-          <a href="index.html#projects">Recent</a>
-          <a href="projects.html">All</a>
-      </div>
-    </div>
-    <a style="text-align: left;" href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">About</a> 
+    <a style="text-align: left;" href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">About</a> 
+    <a style="text-align: left;" href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">Projects</a> 
+    <a style="text-align: left;" href="img/resume_2021.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">Resume</a> 
     <ul class="social-media-list" "w3-padding-64">
-      <li><a style="color:white; " href="https://twitter.com/thats_suber" class="fa fa-twitter"></a></li>
       <li><a style="color:white; " href="https://www.linkedin.com/in/joshuasuber/" class="fa fa-linkedin"></a></li>
       <li><a style="color:white; " href="https://www.instagram.com/thats_suber/" class="fa fa-instagram"></a></li>
       <li><a style="color:white; " href="mailto:joshuasuber3@gmail.com" class="fa fa-envelope"></a></li>
@@ -89,6 +80,7 @@ body {font-size:16px;}
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px;" id="about">
+  <img src="img/clipboard_header.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="Esbie Device Mock Up">
 
   <!-- Header -->
 
@@ -116,15 +108,15 @@ body {font-size:16px;}
       <p>My goal was to re-frame the app with a focus on vide-based media. This included restructuring the application elements around videos of recipes, episodes, and classes. This also included emphasizing live viewing of featured shows, and cooking instructors.</p>
       
       <h1 class="w3-xlarge w3-light-grey"><b>Mapping</b></h1>
-      <img src="stakeholders.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
-      <img src="empathy.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="img/stakeholders.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="img/empathy.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
       
       <h1 class="w3-xlarge w3-light-grey"><b>Research</b></h1>
       <p>I explore the application, and analyzed the key elements of the experience below.</p>
       
       <p><br>Pros: <br> - Wide use of images and photography to minimize need to reed unfamiliar titles.<br>- Tile format</p>
       <p><br>Pain Points:<br> - Overwhelming amount of content for users to sift through.<br>- No clear navigable path to desired content.</p>
-      <img src="images/clipboard/design06.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="img/clipboard/design06.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
       <h1 class="w3-xlarge w3-light-grey"><b>Findings</b></h1>
     <p>As you see above, my analysis focused on the navigability and accessibility to direced information. Notable elements in the app interface and experience include:<br> - A seperate content navigation bar under the explore tab.<br> - Emphasis on meals and recipes made by star cooks or presented on feature shows<br> - Explore, Search, Plan, List, Save imply similar user behaviors/responses (i.e. Explore vs Search or Plan vs List)<br> - Emphasizes cooking mental models through the use of food photography<br> - Video content is prevalently avaliable, but not on the main menu<br> - Lack of content recignition</p>
       
@@ -134,17 +126,17 @@ body {font-size:16px;}
       
       <h1 class="w3-xlarge w3-light-grey"><b>Ideation</b></h1>
       <p>My goal was to re-frame the app with a focus on video-based media. The included structuring the application elements around videos of recipes, episodes, and classes. This also included emphasizing live viewing of featured shows and cooking instructors.</p>
-      <img src="images/clipboard/design05.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="img/clipboard/design05.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
       <h1 class="w3-xlarge w3-light-grey"><b>Design Decisions</b></h1>
       <p>I decided to apply Soft UI to the redesign of the app's interface. To maintain the goal of exploration and discoverability, and aimed to emphasis the materiality of Soft UI in efforts to enhance interaction.<p>
       <p><br>Pro: Emphasize materiality of application, which supports mental mode of cooking and food as a tangible activity.</p>
       <p><br>Con: Soft UI could impact accessibility due to subtle contrast of design.</p>
       <p><br>The original interface has repetitive sections, so I minimized the navigation sections.</p>
-      <img src="images/clipboard/design04.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="img/clipboard/design04.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
       <h1 class="w3-xlarge w3-light-grey"><b>High Fidelity Prototype</b></h1>
-      <img src="images/clipboard/design01.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
-      <img src="images/clipboard/design02.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
-      <img src="images/clipboard/design03.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="img/clipboard/design01.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="img/clipboard/design02.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="img/clipboard/design03.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="White walls with designer chairs">
       <h1 class="w3-xlarge w3-light-grey"><b>Feedback</b></h1>
       <p>I was able to get quick user feedback from a few participants. Their feedback included: 
         <br> - The need for a menu to help find desired contents

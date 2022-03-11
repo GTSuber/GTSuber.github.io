@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Joshua Suber</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css" />
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;cursor:pointer}
+.w3-half img:hover{opacity:1}
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 300px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-white w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+        <li id="exit" class="exit-btn hide-desktop"><img src="img/logo(2021).png" alt="logo" class="logo">
+        </li>
+        <p style="font-size: 16px; font-family: Roboto;" class="w3-padding-20">Hi, I am a Master student at Carnegie Mellon University studying Human Computer Interactions, currently pursuing fulltime UX Design roles.</p>
+        
+    </div>
+    <div class="w3-bar-block" "pill-nav">
+      <a style="text-align: left;" href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">About</a> 
+      <a style="text-align: left;" href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover">Projects</a> 
+      <a style="text-align: left;" href="img/resume_2021.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-hover ">Resume</a> 
+      <ul class="social-media-list" "w3-padding-64">
+        <li><a style="color:white; " href="https://www.linkedin.com/in/joshuasuber/" class="fa fa-linkedin"></a></li>
+        <li><a style="color:white; " href="https://www.instagram.com/thats_suber/" class="fa fa-instagram"></a></li>
+        <li><a style="color:white; " href="mailto:joshuasuber3@gmail.com" class="fa fa-envelope"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-white w3-margin-right" onclick="w3_open()">
+      <label class="switch" id="menu" style="float: right;">
+          <input type="checkbox" unchecked id="check" onclick="myFunction()">
+          <span class="slider round"></span>
+      </label>
+  </a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px;" id="about">
+    <img src="img/book_scout_header.png" style="width:100%; margin-bottom: 15px;" onclick="onClick(this)" alt="Esbie Device Mock Up">
+
+  <!-- Header -->
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding" style="margin-top: 30px; margin-bottom: 30px">
+    <div class="w3-row-padding";>
+        <h1 class="w3-xlarge w3-light-grey"><b>Project Summary</b></h1>
+        <div class="w3-half">
+            <p><b>Objective: </b>This research project focuses on visualizing the future of voice on college campuses. This assignment mainly explores the creation of <b>an experience</b>, and outlines important micro interactions. 
+                After brainstorming, my team decided to create a <b>motivating studying experience</b>, 
+                because we believe the application of voice to the academic lives of students show valuable potential.
+                <br><br><b>Result: </b>A voice assistant to help college students study. Utilized Google’s Conversation Design
+                Guideline to design a system persona and user dialog to help students stay
+                motivated before and during a study session. Planned and conducted Wizard of Oz usability testing and heuristic evaulation.</p>
+        </div>
+        <div class="w3-half" style="margin-top: 10px;">
+            <center><iframe width="470" height="378" src="https://www.youtube.com/embed/Kj8xtTl4yZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </div>
+    </div>
+      
+      <h1 class="w3-xlarge w3-light-grey"><b>Project Details</b></h1>
+      <p>Aug 2019 - December 2019</p>
+      <p >- Group consisted of 4 Computational Media students.</p>
+      <p>- Followed Google's Conversational Design Guidelines</p>
+      <p>User Group Pool: Undergraduate/Graduate students, faculty, staff, guests</p>
+      
+      <h1 class="w3-xlarge w3-light-grey"><b>Overview</b></h1>
+      <h1 class="w3-large w3-text-red"><b>Opportunity for Voice</b></h1>
+      <p style="font-size: 14px;"">According to the Bureau of Labor Statistics, American college students, on average, dedicate 3.5 hours towards studying outside educational activities. However, although students spend a considerable amount of time studying, academic studying is often described as a stressful experience
+      <br>Research resources showed that 70% of students were already using a voice assistant in other areas of their life. Since voice assistants is a technology familiar to our user group, college students, it has the potential of being incorporated into their college experience."</p>
+      <h1 class="w3-xlarge w3-light-grey"><b>Framing the Experience</b></h1>
+      <h1 class="w3-large w3-text-red"><b>Background</b></h1>
+      <p >When executing this proposal, we started exploring key sectors of college life for students such as mental/physical health, academics, sports, hobbies, and leisure. We ultimately decided to further our research on the college study experience, and multiple facets that support or hinder its desirability.  
+      <br><br>During our exploration, we defined studying as “when an individual devotes time and attention to acquire knowledge on a given subject to achieve a goal”. We conducted user research to understand the state of art of studying and define the experience to incorporate voice interaction.</p>
+      <h1 class="w3-large w3-text-red"><b>Methods</b></h1>
+      <p>- Direct Observation<br>- Survey<br>- Interview</p>
+          
+      <h1 class="w3-large w3-text-red"><b>Defining a Studying Experience</b></h1>
+          <div class="w3-half">
+          <p>By analyzing the data collected through user research, we were able to categorize the studying experience to different types of interactions depending on these factors. We used a concept map to extract keywords of voice interaction and studying experience from the research data.<br><br>- Motivation<br>- Frequency of studying<br>- Studying alone or in a group<br>- Communication<br>- Public vs. private places<br>- Ambient Signaling</p>
+          </div>
+          <div class="w3-half">
+          <img src="img/group.png" style="width:80%; margin-bottom: 15px; margin-left:80px;" onclick="onClick(this)" alt="Esbie Device Mock Up">
+          </div>
+      <p>We then categorized the students’ studying experiences based on the keywords (click category to view details):</p>
+          
+          <button onclick="drop('Demo13')" class="w3-button w3-block w3-left-align">- Studying Alone</button>
+          <div id="Demo13" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Solely focused on their work. Not communicating with anyone and had headphones on for the majority of the time.</p>
+          </div>
+          
+          <button onclick="drop('Demo14')" class="w3-button w3-block w3-left-align">- Studying with a friend/Communication</button>
+          <div id="Demo14" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Continuously talked to the other person. Often reviewing concepts and information. Explained or clarified confusing concepts to one another, accompanied by feedbacks to one’s understanding of the concept ( “Good”, “Okay, it makes sense”).</p>
+          </div>
+          
+          <button onclick="drop('Demo15')" class="w3-button w3-block w3-left-align">- Studing with a friend/Companionship</button>
+          <div id="Demo15" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Barely interacted with one another, except for when they ask each other questions. Enjoying each other’s company.</p>
+          </div>
+          
+          <button onclick="drop('Demo16')" class="w3-button w3-block w3-left-align">- Studing in a group</button>
+          <div id="Demo16" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Studying in groups of more than two people, they reviewed the content together and shared study materials. Facilitated discussions in which they built on each other’s ideas.  </p>
+          </div>
+      
+      <h1 class="w3-large w3-text-red"><b>User Personas</b></h1>
+        <p>We crafted user personas based on the research of our target user groups.</p>
+        <img src="img/personas.png" style="width:100%; margin-bottom: 15px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        
+      <h1 class="w3-large w3-text-red"><b>Why Voice (click reasons to view detail)</b></h1>
+      <p>The most important question for this design challenge was understanding why we ought to use voice interaction technology for the problem of studying experience.</p>
+      <button onclick="drop('Demo9')" class="w3-button w3-block w3-left-align">- Conversational Learning</button>
+          <div id="Demo9" class="w3-container w3-hide">
+              <p style="font-size: 14px;">One key finding from the interview was the absence of voice interaction in the user’s mental model of studying, which we learned from the interviews. Yet, there is an on-going research on conversational learning. <br><br>One research showed that the learners used distinct perspectives, interests, and styles to shaped their integrative effort to make sense of the idea while learning through conversations[7]. To add, another paper highlighted how the learning  process can be influenced by the use of conversational tools as learning catalysts [9].<br><br>These viewpoints were relatable for college students who often need to study and internalize different types of information from multiple subjects. We wished to explore these advantages of conversational learning for the college student’s learning experiences.</p>
+          </div>
+      <button onclick="drop('Demo10')" class="w3-button w3-block w3-left-align">- Emotional Interaction</button>
+          <div id="Demo10" class="w3-container w3-hide">
+              <p style="font-size: 14px;">The future of voice interaction lies in providing a desirable emotional experience to its users. A study [5]  has revealed that the tone and language of a voice can impact the user’s perception and how perceptible the information they are about to listen to. Listening to cues signaling pressure and control leads to preferential and more in-depth processing mechanisms. The incorporation of nudge theory[6]   and the usage of positive feedback in the dialog can also be beneficial to help users be motivated to embarking a task.<br><br>From here, we wish to utilize the tone and language of the voice assistant to change the student’s perception of studying subjects they are not motivated for. As confirmed by our research, academic studying is often a stressful, but necessary experience. We wish to improve the desirability of the study experience by making it positive and encouraging for students.</p>
+          </div>
+     <button onclick="drop('Demo12')" class="w3-button w3-block w3-left-align">- Accessible Information</button>
+          <div id="Demo12" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Through voice assistants, users can quickly and directly get information. A survey on Alexa[4] usage showed that the top feature users executed most were Alexa to check and search for various facts.<br><br>With access to various study materials granted by the students, the voice assistant would save student time’s on finding the materials they need to study. This will be advantageous for students who seek immediate feedback and on-demand access to class materials. It would lead to students’ effective use of time and attention, two crucial factors that distinguished the students’ good studying experience to an unpleasant one.<br><br>To add, time management skills have been identified as one indication of higher performance and lower stress and anxiety [7]. Accentuating the voice assistant’s capability on this aspect for the students may help reduce their stress level. </p>
+          </div>
+          
+          
+        
+      
+      <h1 class="w3-xlarge w3-light-grey"><b>Ideation</b></h1>
+      <h1 class="w3-large w3-text-red"><b>Design Challenges (click tabs to view more)</b></h1>
+      <p sty;e="font-weight:lighter;">Based on the insights from the user research the, two main problems we decided to elaborate on for our design are: (click list elements for more info)</p>
+      <button onclick="drop('Demo1')" class="w3-button w3-block w3-left-align">- Issues with retaining information</button>
+          <div id="Demo1" class="w3-container w3-hide">
+              <p style="font-size: 14px;">For the students, searching for the right study materials and organizing them is part of their studying process. However, the accessibility of the studying material influenced the student’s motivation to start internalizing the material.</p>
+          </div>
+          
+      <button onclick="drop('Demo2')" class="w3-button w3-block w3-left-align">- Lacking Motivation</button>
+          <div id="Demo2" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Students found it very difficult to spend time and effort in studying subjects they lacked interest in. This was common for students’ worst studying experiences - a negative cycle of lacking motivation, not studying for the subject, getting a bad grade, and having to study more for the subject they don’t like due to their bad grade.</p>
+          </div>
+          
+      <button onclick="drop('Demo3')" class="w3-button w3-block w3-left-align">- Reframing the Experience</button>
+          <div id="Demo3" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Upon ideating the voice assistant, we decided to focus on the Amy Persona out of our three personas. This was due to the fact that Amy had the lowest motivation level out of the three personas and a majority of the data was collected from this user type. Thus, we reframed the studying experience to students who do not study regularly, face challenges staying motivated to study, and study alone.</p>
+          </div>
+          
+          <p>With these reframings in mind and taking the insights from research and strength points of a voice assistant, we ideated the voice assistant’s traits, key use cases, features, and dialog. We followed Google’s Conversation Design Process as a guideline for our ideation process. </p>
+          
+          <img src="img/persona.png" style="width:40%; margin-bottom: 15px; margin-left: 240px; " onclick="onClick(this)" alt="White walls with designer chairs">
+          <p>During the ideation session, we created a system persona. We designed the personality of the voice assistant through generating a list of adjectives that describe a personality that would best enhance the desirability of the current studying experience for students.<br><br>Through the survey and interviews, a lot of students identified their studying experiences as stressful and unmotivating. Thus, we focused on adjectives such as “positive, cheerful, organized” to promote a more positive and supportive studying experience for the students.<br><br>To help users identify the voice assistant as an entity to communicate with, we named the system persona: ‘Esbie’. Esbie is the pronunciation of “e-s-b”, an acronym for an electronic study buddy, the direction we aim our product to take.</p>
+          
+          <h1 class="w3-large w3-text-red"><b>Key Use Cases/Scenarios</b></h1>
+        <p><b>Click tabs to read more</b></p>
+          <button onclick="drop('Demo4')" class="w3-button w3-block w3-left-align">- Scheduling Study Session</button>
+          <div id="Demo4" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Interviews and surveys with students showed that they wanted to be more efficient and productive with their time for or while studying. Inspired by this finding, we ideated interactions that would support users allocating specific times to study. This scenario illustrates how the user would schedule a study session at specific time blocks of a day with the voice assistant.</p>
+          </div>
+          
+      <button onclick="drop('Demo5')" class="w3-button w3-block w3-left-align">- Motivating User</button>
+          <div id="Demo5" class="w3-container w3-hide">
+              <p style="font-size: 14px;">A common challenge for students was combatting low motivation and high stress due to it. This scenario shows how voice assistant can approach a user with low motivation and help the user to start and finish a study session. </p>
+          </div>
+          
+      <button onclick="drop('Demo6')" class="w3-button w3-block w3-left-align">- Providing Study Environment</button>
+          <div id="Demo6" class="w3-container w3-hide">
+              <p style="font-size: 14px;">One way students combatted low motivation was by studying at environments that they found inspiring and could focus best in. For instance, they sought out environments with some white background noise. This scenario demonstrates how the voice assistant suggests the users change their studying environment. It also highlights the voice assistant’s knowledge of both the user’s preference and the ability to suggest the best locations to study. </p>
+          </div> 
+          
+          <h1 class="w3-large w3-text-red"><b>Features</b></h1>
+          <button onclick="drop('Demo7')" class="w3-button w3-block w3-left-align">- Scheduling</button>
+          <div id="Demo7" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Users can allocate specific time periods to set up study sessions with Esbie in hourly intervals. Based on the information on the user’s calendar, Esbie can suggest a time period at times the user is not occupied for the user could schedule a study session.</p>
+          </div>
+          
+      <button onclick="drop('Demo8')" class="w3-button w3-block w3-left-align">- Remind User of Study Goals</button>
+          <div id="Demo8" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Esbie can remind the users of their study goals. Esbie records and saves the goal the user verbally stated when asked: “What is your study goal?”. This question is asked to the user when they schedule up a schedule session with Esbie. It can also reiterate the goals when asked to remind the study goal. </p>
+          </div>
+        <button onclick="drop('Demo8')" class="w3-button w3-block w3-left-align">- Suggest Study Locations</button>
+          <div id="Demo8" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Esbie can suggest users places to study based on the user’s previous study location patterns by relating the time of the day and the subject the user studied.</p>
+          </div>
+        
+
+          <h1 class="w3-xlarge w3-light-grey"><b>Scanrios (click to view storyboards)</b></h1>
+        <p><b>Click tabs to read more</b></p>
+        <button onclick="drop('Demo222')" class="w3-button w3-block w3-left-align">Version 1</button>
+          <div id="Demo222" class="w3-container w3-hide">
+              <img src="img/scenario1.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        <img src="img/scenario2.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        <img src="img/scenario3.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        <img src="img/scenario4.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        <img src="img/scenario5.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+          </div>
+        <button onclick="drop('Demo233')" class="w3-button w3-block w3-left-align">Version 2</button>
+          <div id="Demo233" class="w3-container w3-hide">
+              <img src="img/scenario6.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        <img src="img/scenario7.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        <img src="img/scenario8.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        <img src="img/scenario9.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        <img src="img/scenario10.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+        <img src="img/scenario11.png" style="width:100%; margin-bottom: 10px; " onclick="onClick(this)" alt="White walls with designer chairs">
+          </div>
+        
+       
+        
+      <h1 class="w3-xlarge w3-light-grey"><b>Usability and Wizard of Oz Testing</b></h1>
+      <p>With our low fidelity prototype, we  recruited 4 undergraduate Georgia Tech students who met the criteria of one of our persona (Amy). They had difficulty staying motivated to study based and was the user group we were designing the interactions for.<br><br>One designer assisted the participants during the usability test for any questions or confusion. The facilitator read from a script to inform the participants of our objectives of the project, what Esbie is, its functions, and the user task they will be performing during the usability test.<br><br>We prototyped the system using AdobeXD and its built-in voice interaction prototype feature. Each interface looking like below was fed with user input the prototype would listen for and the output according to the input. The user interacted with the interface during the test.<br><br>Qualitative data was collected through observation, audio-recording of the session, and post-interview questions.</p>
+      <div class="w3-half w3-white">
+      <h1 class="w3-large w3-text-red"><b>Demo Registration</b></h1>
+          <p>The participants were asked to fill out a demo registration Google form. The form asked for the participants’ names, majors, courses they were taking, and times they usually studied. This information was collected by the designer to update the dialog in the prototype to create a personalized experience for our participants.</p>
+       <h1 class="w3-large w3-text-red"><b>User Task</b></h1>
+          <p>Participants were instructed to “schedule a study session with Esbie at a time you are available”. It included subtasks like the following:</p>
+          <p>- User selects the time and day of the week for a study session <br><br>- User selects the subject they are studying for <br><br>- User sets goals for the study session</p>
+       <h1 class="w3-large w3-text-red"><b>Post Interview Questions</b></h1>
+          <p>After completing the given user task, participants were asked a set of questions for the team understand  how the experience of the interaction was for the participant. </p>
+          <p>1. How did you feel about having Esbie schedule your study sessions?</p>
+          <p>2. How was Esbie in the form of support and motivation?</p>
+          <p>3. Were there instances that you felt Esbie was annoying or irritating?</p>
+          <p>4. Are there certain things that you would prefer Esbie to say or ask?</p>
+          <p>5. What was your overall experiences with Esbie?</p>   
+      </div>
+      <div class="w3-half w3-white">
+          <img src="img/demo.png" style="width:90%; margin-bottom: 15px; margin-left: 30px;" onclick="onClick(this)" alt="Esbie Device Mock Up">
+          <img src="img/woz.png" style="width:90%; margin-bottom: 15px; margin-left: 30px;" onclick="onClick(this)" alt="Esbie Device Mock Up">
+          <img src="img/xd.png" style="width:90%; margin-bottom: 15px; margin-left: 30px;" onclick="onClick(this)" alt="Esbie Device Mock Up">
+         
+      </div>
+      <p class=" w3-white" style="margin-left: 30px"><b>-</b></p>
+      <h1 class="w3-xlarge w3-light-grey"><b>Evaluation</b></h1>
+          <h1 class="w3-large w3-text-red"><b>Dialog Ideation using Heuristics (What we learned)</b></h1>
+          <p>The participants from the WOZ found the experience interacting with Esbie desirable. Nonetheless, we were able to identify some pain points when we analyzed the interaction using Nielsen’s 10 Usability Heuristics. These pain points were mostly applicable to iterating the dialog design of the system.</p>
+          
+          <button onclick="drop('Demo30')" class="w3-button w3-block w3-left-align">- Flexibility and efficiency of use</button>
+          <div id="Demo30" class="w3-container w3-hide">
+              <p style="font-size: 14px;">
+During WOZ test, we found some participants were more likely to give rapid-fire prompts. A user said that “I didn’t know if I just could say “hey Esbie” or more” versus “I thought I could say everything at once”. This was due to a mismatch in our concept model and the user’s mental model of how to provide information to schedule a session. Our interpretation was to receive information components of scheduling - time, subject name, and goal - one at a time. Thus, the interactions were planned as an array of questions. However, some participants gave all the three components of the information at once, and they were not presented with a way to exit the interaction or speed it up.
+</p>
+          </div>
+          
+      <button onclick="drop('Demo31')" class="w3-button w3-block w3-left-align">- User control and freedom</button>
+          <div id="Demo31" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Our experience often limited the user’s control and freedom to end the interaction. The participants felt like they were only able to end the session when Esbie asked “Is there anything else I can do for you?”, which was only at the end of the conversation. 
+Adding on to that, users were also unable to go back to review their responses or undo their responses when they made a mistake. This gave them little control or freedom, which we wish to take into account in the future iteration.<br><br>To combat this, we added a command “Bye Esbie”, which the user can say to end the conversation at any given time. We also added a command “Esbie repeat” for the user to be able to repeat what Esbie has said.</p>
+          </div> 
+
+      <h1 class="w3-xlarge w3-light-grey"><b>High Fidelity Prototype</b></h1>
+          <div class="w3-half">
+          <h1 class="w3-large w3-text-red"><b>Meet Esbie</b></h1>
+          <p>Esbie is a voice assistant designed to provide a positive and motivating studying experience  User’s interaction with Esbie will be encouraging, informative, and efficient, like talking to a peer counselor.</p>
+          <h1 class="w3-large w3-text-red"><b>Product Design</b></h1>
+          <p>In designing Esbie’s physical product, we focused on its portability and simplicity. The iterations were inspired by how students often study alone and wish to be detached from their phones while studying. To address that, we made Esbie small, compact, and portable so the user can carry it with them. To minimize distraction from interfaces, like the phone, we kept the physical device simple except for a button the user presses on to turn Esbie on and off and a color-changing surface to indicate that Esbie is listening to the user.</p>
+              
+          </div>
+          <div class="w3-half">
+          <img src="img/finalesbie.png" style="width:100%; margin-bottom: 90px; " onclick="onClick(this)" alt="White walls with designer chairs">
+          </div>
+          
+          <button onclick="drop('Demo40')" class="w3-button w3-block w3-left-align">"Esbie, schedule a study session."</button>
+          <div id="Demo40" class="w3-container w3-hide">
+              <div class="w3-half">
+                  <p style="font-size: 14px;">Esbie can schedule hourly study sessions with the user when said the command “schedule a study session”. If it has not all the information needed to schedule a study session, it will then ask what time they’d like to study based on the user’s schedule and to choose which subject from the list of courses the user is taking. Esbie will vibrate around the session time to remind the user.</p>
+          </div>
+              <div class="w3-half">
+          <img src="img/schedule.png" style="width:100%; margin-bottom: 90px; " onclick="onClick(this)" alt="White walls with designer chairs">
+          </div>
+          </div>
+          
+          
+     
+
+          
+      <img src="img/esbie2.png" style="width:100%; margin-bottom: 15px; " onclick="onClick(this)" alt="White walls with designer chairs">
+      </div>
+      
+      <div style="margin-left:30px">
+      <h1 class="w3-xlarge w3-light-grey"><b>Adoption Challenges (click tabs to view more)</b></h1>
+      <button onclick="drop('Demo20')" class="w3-button w3-block w3-left-align">- Use in Public Space</button>
+          <div id="Demo20" class="w3-container w3-hide">
+              <p style="font-size: 14px;">People generally feel socially uncomfortable speaking out loud to voice products in public. This was one reason why we decided to reframe our experience of studying alone in private.<br>Interviewing students during dialog research further unearthed this discomfort as students voice that they “did not want to speak to it in public. Also, I tend to study alone”.</p>
+          </div>
+          
+      <button onclick="drop('Demo21')" class="w3-button w3-block w3-left-align">- Distraction</button>
+          <div id="Demo21" class="w3-container w3-hide">
+              <p style="font-size: 14px;">From interviews, we found that voice interaction is not included in the students’ mental model on how they currently study.<br><br>To be more specific, when studying alone, students barely engaged in a conversation with anyone. The only times they spoke was to themselves to verbalize and internalize the information.<br><br>Upon this state-of-art, our concern is how smooth the transition of introducing a conversation interaction before the students engage in their studying mental model would be.
+</p>
+          </div>
+      <button onclick="drop('Demo23')" class="w3-button w3-block w3-left-align">- Academic Privacy</button>
+          <div id="Demo23" class="w3-container w3-hide">
+              <p style="font-size: 14px;">Esbie can suggest users places to study based on the user’s previous study location patterns by relating the time of the day and the subject the user studied. </p>
+          </div>
+          </div>
+    
+  </div>
+
+  
+  
+
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container
+<div class=" w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p></div>
+-->
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("check").checked = false;
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function drop(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
+
