@@ -105,23 +105,24 @@ body {font-size:16px;}
     <div class="w3-row-padding";>
         <h1 class="w3-xlarge w3-light-grey"><b>Problem Statement</b></h1>
         <p class="w3-large">
-            Due to Constructions Junction’s large rotating inventory, it is can be difficult for consumers to recognize potential methods of 
-            utilization for the available materials. There is an opportunity for Construction to be proactive, and help their consumer discover 
-            projects that would be applicable to their lives. 
+          Taking a mobile-first appraoch, How might we design a responsive website that allows users to locate avaliable books from a municipal library. 
         </p>
     </div>
 
     <div class="w3-row-padding";>
         <h1 class="w3-xlarge w3-light-grey"><b>Domain Research</b></h1>
         <div class="w3-half">
-            <p>To best understand the problem space, our team conducted broad background research on Construction Junction. This research included elements such as the history, 
-                organization, operations, technology, competitors, and goals. During the exporation process, we discovered the Construction Junction’s core offers are focused on 
-                donation, recycling, deconstruction services, and retail.</p>
-                
-                <p>To help fufill sustainability goals, Construction Junction aims to participate in a circular economy through 
-                the resell/repurpose of deconstructed materials and items. They are also maintain various community partnerships, and working with local Pittsburgh businesses.</p>
-                
-                <p>Clear connections we have identified were: (1) Government, (2) Business/Non-Profit, (3) Environment, and (4) Community  </p>
+            <p>To understand the current state of locating available books, we felt it was important to analyze modern systems users employ to locate available library books. Competitors we considered were:</p>
+            <ul>
+              <li>Carnegie Library of Pittsburgh website </li>
+              <li>Minuteman Library Network  </li>
+              <li>Other possible non-library competitors </li>
+              <li>Barnes and Noble  </li>
+              <li>Amazon </li>
+            </ul>
+              
+              
+            <p>We analyzed both their mobile and desktop versions and performed a heuristic evaluation on how well they comply with human-centered design patterns.</p>
         </div>
 
         <div class="w3-half">
@@ -130,28 +131,38 @@ body {font-size:16px;}
         
 
     <div class="w3-row-padding";>
-        <h1 class="w3-xlarge w3-light-grey"><b>Sketches</b></h1>
+        <h1 class="w3-xlarge w3-light-grey"><b>Sketches and Wireframe</b></h1>
         <img src="img/bookscout_sketches.png" style="width:100%;" onclick="onClick(this)" alt="Constrcuton Junction Domain Image">
-        <p>The main takeway from the wireframes was the key format of the navigation tabs, and how the interactions for each taks (inspiration, 
-            creation, organization) worked together to support the showcase of projects for the mobile service. </p>
+        <p>We conducted two Think-Aloud sessions using our paper prototype. The sessions were conducted remotely, and participants were asked to verbalize both their thoughts as well as what they were viewing. Since this was remote, we needed the extra layer of description to minimize any ambiguity or assumptions on what the viewers were referencing. </p>
+        <br>
+        <p>From these sessions, we noticed that participants had clearly different preferences on the preferred ordering of the search experience. Some wanted to choose filters before they pressed search, while others wanted those options after choosing a book. It was clear that our placement of the filters between the search and results pages was disruptive, and that we needed to narrow down our target audience by choosing one ordering approach. The confusion many of our participants had with the map tab also made it apparent the map functionality needed to be better incorporated into the locating/search process. </p>
         
     </div>
 
     <div class="w3-row-padding";>
         <h1 class="w3-xlarge w3-light-grey"><b>Low-Fi and Mid-Fi Prototype</b></h1>
         <img src="img/bookscout_lofi.png" style="width:100%;" onclick="onClick(this)" alt="Constrcuton Junction Domain Image">
-        <p>During this phase, a important questions emerged: How do we account for unavailable items within a rotating inventory? We strived to 
-            solve this through the buy/assistant shopping user flow that illustrates how the user may confirm their purchase of materials. From our 
-            feedback, we learned that there was room for improvement for this interaction. Since our main focus was to emphasize the availability of 
-            the material/item, our team decided to focus on notifying the user of the current status of material inventory rather than the entire 
-            checkout process. </p>
+        <p>Following our Think-Aloud session and Low-Fi Prototype, we began developing an interactive Mid-Fi prototype that addressed many of the feedback and suggestions provided. To better showcase our design approach in a relevant context, we decided to use the Carnegie Library of Pittsburgh as our basis. This is not intended to be a redesign, but rather an example of how our design can be applied to a digital library service. </p>
+        <br>
+        <p>We learned Availability of a book is a major priority in whether a user decided to request a book. We also learned to iterate on our design to better emphasize our main innovative element.</p>
     </div>
 
-  <div>
+    <div class="w3-row-padding";>
+      <h1 class="w3-xlarge w3-light-grey"><b>Low-Fi and Mid-Fi Prototype</b></h1>
+      <img src="img/bs_mobile.png" style="width:100%;" onclick="onClick(this)" alt="Book Scout Mobile Version">
+      <img src="img/bs_web.png" style="width:100%;" onclick="onClick(this)" alt="Book Scout Mobile Version">
+      <p>Our solution focused on balancing a user’s focus on when and where their book may be available. If they could get the book sooner, they might be willing to travel a bit further. But if they could afford to wait they might elect to choose the library closest to them. We wanted to make these decisions easier to make. We also spoke on why investors should care, with this not only being an issue unique to the Carnegie Library but library systems all around the US. We believe our solution can be scaled to improve people’s experiences at all libraries, encouraging people to support locals by doing so! </p>
+  </div>
 
-        <div class="w3-half">
-            <img src="img/bookscout_nextstep.png" style="width:100%;" onclick="onClick(this)" alt="Constrcuton Junction Domain Image">
-        </div>
+  <div  class="w3-row-padding";>
+
+    <h1 class="w3-xlarge w3-light-grey"><b>Pitch</b></h1>
+
+    <img src="img/bookscout_nextstep.png" style="width:100%;" onclick="onClick(this)" alt="Constrcuton Junction Domain Image">
+
+        <p>We introduced our audience to a scenario where a busy college student was looking for a book and needed to balance their schedule and transportation options. Users need to know how soon they can get the book and also where they would have to travel to get it. 
+
+          We also needed to set the expectations that this wasn’t a big box store, such as Amazon, where the book would arrive two hours from ordering it. We needed to bring them joy and anticipation of supporting a local library to our design. We also served to calm our users’ anxieties with transparency and a consistent display of their status. </p>
         
     </div>
           
